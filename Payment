@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stripe Checkout</title>
-    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon site</title>
 </head>
 <body>
-    <h1>Bienvenue sur ma page Stripe</h1>
-    <stripe-pricing-table 
-        pricing-table-id="prctbl_1QdDbWRoMbfqN4EayVPyIakL"
-        publishable-key="pk_live_51Ov8HgRoMbfqN4EaDvowaMtQ4ihIeBcr9qLYeI3ZmwgfSH7wPFFsbDLGo34I11q9rkH0ipwLMdRgpVfMTF3ZWChm00GNyzBK2c">
-    </stripe-pricing-table>
+  <h1>Bienvenue sur mon site</h1>
+  <p>Voici mes offres :</p>
+
+  <!-- Intégration de Stripe Pricing Table -->
+  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+  <stripe-pricing-table
+    pricing-table-id="prctbl_1QdDbWRoMbfqN4EayVPyIakL"
+    publishable-key="pk_live_51Ov8HgRoMbfqN4EaDvowaMtQ4ihIeBcr9qLYeI3ZmwgfSH7wPFFsbDLGo34I11q9rkH0ipwLMdRgpVfMTF3ZWChm00GNyzBK2c">
+  </stripe-pricing-table>
 </body>
 </html>
